@@ -9,20 +9,25 @@
   <body>
     <template id="li_template">
       <li>
-        <a>
           <h3 class="title">Tab Title</h3>
           <p class="pathname">Tab Pathname</p>
-        </a>
       </li>
     </template>
     
     <h1>Google Dev Docs</h1>
     <div id="clock">
     </div>
+
+    <!-- <form>
+        <label for="blocked-site">First name:</label><br>
+        <input type="text" id="blocked-site" name="blocked-site"><br>
+    </form> -->
+
+    <p>Site to Block: <input id="apivalue" type="text" name="value"></p>
+    <button> Block Site </button>
     <script src="time.js"></script>
-    <button>Group Tabs</button>
     
-    <ul></ul>
-    <script src="./popup.js" type="module"></script>
+    <ul id="blockListDisplay"></ul>
+    <script src="./mod_memory.js" type="module"></script>
   </body>
 </html>
