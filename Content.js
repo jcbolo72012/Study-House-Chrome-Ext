@@ -40,9 +40,8 @@ const generateHTML = () => {
     var url = chrome.runtime.getURL('studyhouse.png');
     return `
     <div class='studyhouse_container'>
-        <img src='${url}' id='studyhouse_logo'>    </div>
+        <img src='https://raw.githubusercontent.com/kmjson/StudyHouse-Extension/main/studyhouse.png' id='studyhouse_logo'>    </div>
     <div class='studyhouse_text'>You should be productive right now instead!</div>
-    <div class='additional'>${url}</div>    
      `;
 };
 
