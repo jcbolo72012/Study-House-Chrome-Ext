@@ -7,7 +7,7 @@ chrome.storage.sync.get(/* String or Array */["blockList"], function(items){
     console.log(sites);
     let list = document.getElementById("blockListDisplay");
     
-    memorySites.forEach((item) => {
+    (memorySites || []).forEach((item) => {
         sites.push(item);
         let li = document.createElement("li");
         li.innerText = item;
@@ -18,7 +18,7 @@ chrome.storage.sync.get(/* String or Array */["blockList"], function(items){
 
 block_button.addEventListener("click", function(){
     chrome.storage.sync.get(/* String or Array */["blockList"], function(items){
-        const remSites = items["blockList"];
+        const remSites = items["blockList"] || [];
         
         remSites.forEach((item) => {
             sites.push(item);
